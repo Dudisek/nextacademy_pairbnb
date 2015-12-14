@@ -31,18 +31,29 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width: 480px) {    
+   ul li:nth-of-type(1n+2) {display: none;} 
+}
+
 .hero-header {
   text-align: center;
   height: 500px;
   padding-top: 10%;
   text-transform: uppercase;
   color: #fff;
+
   .main-text {
+    @media screen and (max-width: 480px) {  
+    font-size: 20px;
+  }
     letter-spacing: 6px;
     font-size: 70px;
     margin-bottom: 20px;
   }
   .sub-text {
+        @media screen and (max-width: 480px) {  
+    font-size: 15px;
+  }
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
@@ -62,11 +73,17 @@ body {
 }
 
 .para-one {
+  @media screen and (max-width: 480px) {   
+    width: 100%;
+  } 
   width: 50%;
   float: left;
 }
 
 .para-two {
+    @media screen and (max-width: 480px) {   
+    width: 100%;
+  } 
   width: 50%;
   float: left;
 }
@@ -136,6 +153,9 @@ body {
 }
 
 #footer {
+  @media screen and (max-width: 480px) {    
+   ul li:nth-of-type(1n+2) {display: none;
+    }}
   clear: both;
   position: relative;
   z-index: 10;
